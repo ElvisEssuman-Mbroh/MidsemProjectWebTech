@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<style>
+  body {
+    background-image: url(styles/imagess/ctrller.jpg);
+  }
+
+  label {
+    font-weight: bold;
+  }
+</style>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Register for the Gaming Club</h2>
+    <form id="registration-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="phone">Phone Number (with Country Code):</label>
+      <input type="tel" id="phone" name="phone" required>
+      
+      <label for="Student-Role">Select Your Role in the Club:</label>
+      <select id="Student-Role" name="Student-Role" required>
+        <option value="Member">Member</option>
+        <option value="Leader">Leader</option>
+        <option value="Volunteer">Volunteer</option>
+      </select>
+      
+      <button type="submit">Submit</button>
+    </form>
+    <button><a href="index.html">Back to Home</a></button>
+  </section>
+
+  <footer>
+    <p>© The Gaming Club</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
